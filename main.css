@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+html, body {
+    background: linear-gradient(to right, #D2EBEC , #3E6769);
+    height: 100%;
+    font-family: 'Bree Serif', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.header__text {
+    background: white;
+    display: grid;
+    height: 10%;
+    font-size: 7vh;
+    margin: 0;
+    mix-blend-mode: screen;
+    position: absolute;
+    place-content: center;
+    width: 100%;
+}
+.header__tagline {
+    background: white;
+    display: grid;
+    height: 4%;
+    font-size: 2vh;
+    margin: 0;
+    mix-blend-mode: screen;
+    position: absolute;
+    place-content: center;
+    top: 10%;
+    width: 100%;
+}
+.main {
+    display: grid;
+    place-content: center;
+    height: 100%;
+}

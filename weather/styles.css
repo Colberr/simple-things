@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono');
+.weather__input {
+    height: 4vw;
+    margin: 0;
+    width: 14vw;
+}
+.weather__input input {
+    background: white;
+    border: none;
+    height: 100%;
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 2vw;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 10px;
+    mix-blend-mode: screen;
+    width: calc(100% - 10px);
+}
+
+.weather__sect {
+    background: white;
+    border: none;
+    display: grid;
+    height: 100%;
+    margin: 0;
+    mix-blend-mode: screen;
+    place-content: center;
+    transition: 100ms box-shadow ease-out, 70ms transform ease-in;
+    width: 100%;
+}
+.weather__btn {
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 1.5vw;
+}
+.weather__btn:hover {
+    box-shadow: 1px 1px 4px 3px #ffffff33;
+}
+.weather__btn:active {
+    transform: scale(0.95);
+}
+.weather__btn:focus {
+    outline: none;
+}
+
+.weather__single {
+    font-size: 1.8vw;
+    height: 4vw;
+    margin: 1vw;
+    width: 4vw;
+}
+.weather__half {
+    font-size: 0.9vw;
+    height: 4vw;
+    margin: 1vw;
+    width: 9vw;
+}
+.weather__full {
+    font-size: 2vw;
+    height: 4vw;
+    margin: 1vw;
+    width: 19vw;
+}

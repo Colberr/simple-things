@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono');
+.calc__display {
+    height: 4vw;
+    margin: 0;
+    width: 19vw;
+}
+.calc__display input {
+    background: white;
+    border: none;
+    height: 100%;
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 2vw;
+    font-weight: 700;
+    margin: 0;
+    padding-right: 10px;
+    mix-blend-mode: screen;
+    text-align: right;
+    width: calc(100% - 10px);
+}
+
+.calc__btn {
+    background: white;
+    border: none;
+    height: 100%;
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 1.5vw;
+    margin: 0;
+    mix-blend-mode: screen;
+    transition: 100ms box-shadow ease-out, 70ms transform ease-in;
+    width: 100%;
+}
+.calc__btn:hover {
+    box-shadow: 1px 1px 4px 3px #ffffff33;
+}
+.calc__btn:active {
+    transform: scale(0.95);
+}
+.calc__btn:focus {
+    outline: none;
+}
+.calc__sbtn {
+    height: 4vw;
+    margin: 1vw;
+    width: 4vw;
+}
+.calc__wbtn {
+    height: 4vw;
+    margin: 1vw;
+    width: 9vw;
+}
+.calc__tbtn {
+    height: 9vw;
+    margin: 1vw;
+    width: 4vw;
+}

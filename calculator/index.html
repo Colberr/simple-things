@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Simple calculator made purely with HTML, CSS and JavaScript">
+        <meta name="keywords" content="html,css,javascript,js,josh colbert,colbert,colbertxyz,colbert xyz,cxyz,calculator,calc">
+        <meta name="author" content="Josh Colbert">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JS Calc.</title>
+        <link rel="icon" href="../resources/icon-white.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../main.css">
+        <script src="script.js"></script>
+    </head>
+    <body onkeypress="keyCode(event)">
+        <div class="header">
+            <h1 class="header__text">JS Calc.</h1>
+        </div>
+        <div class="main">
+            <table class="calc">
+                <thead>
+                    <tr>
+                        <td class="calc__display" colspan="4">
+                            <input id="display" readonly>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="wipe()" value="C">
+                        </td>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="backspace()" value="&larr;">
+                        </td>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('/')" value="&#x00F7;">
+                        </td>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('*')" value="&#x00D7;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('7')" value="7">
+                        </td>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('8')" value="8">
+                        </td>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('9')" value="9">
+                        </td>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('-')" value="-">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('4')" value="4">
+                        </td>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('5')" value="5">
+                        </td>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('6')" value="6">
+                        </td>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('+')" value="+">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('1')" value="1">
+                        </td>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('2')" value="2">
+                        </td>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('3')" value="3">
+                        </td>
+                        <td class="calc__tbtn" rowspan="2">
+                            <input class="calc__btn" type="button" onclick="equals()" value="=">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="calc__sbtn" colspan="2">
+                            <input class="calc__btn" type="button" onclick="input('0')" value="0">
+                        </td>
+                        <td class="calc__sbtn">
+                            <input class="calc__btn" type="button" onclick="input('.')" value=".">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
