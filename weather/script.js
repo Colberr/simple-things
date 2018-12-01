@@ -2,7 +2,7 @@ var owmIcons = ["01","02","03","04","09","10","11","13","50"]
 var wiDay = ["sunny","sunny-overcast","cloudy-high","cloudy","rain-mix","rain","storm-showers","snow","fog"]
 var wiNight = ["clear","partly-cloudy","cloudy-high","cloudy","rain-mix","rain","storm-showers","snow","fog"]
 
-var baseURL = "http://api.openweathermap.org/data/2.5/weather?APPID=3bf87c773780c88ab9ae96d1951fabac&units=metric&q=";
+var baseURL = "https://api.openweathermap.org/data/2.5/weather?APPID=3bf87c773780c88ab9ae96d1951fabac&units=metric&q=";
 changeLoc("london");
 
 function changeLoc(city) {
