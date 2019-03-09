@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono');
+.conv__display {
+    height: 4vw;
+    margin: 0;
+    width: 19vw;
+}
+.conv__display input {
+    background: white;
+    border: none;
+    height: 100%;
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 2vw;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 10px;
+    mix-blend-mode: screen;
+    width: calc(100% - 10px);
+}
+.conv__sml {
+    background: red;
+    border: none;
+    height: 4vw;
+    margin: 1vw;
+    width: 4vw;
+}

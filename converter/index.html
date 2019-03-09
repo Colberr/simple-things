@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Simple calculator made purely with HTML, CSS and JavaScript">
+        <meta name="keywords" content="html,css,javascript,js,josh colbert,colbert,colbertxyz,colbert xyz,cxyz,calculator,calc">
+        <meta name="author" content="Josh Colbert">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JS Conv.</title>
+        <link rel="icon" href="../resources/icon-white.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../main.css">
+        <script src="script.js"></script>
+    </head>
+    <body onkeypress="keyCode(event)">
+        <div class="header">
+            <h1 class="header__text">JS Conv.</h1>
+        </div>
+        <div class="main">
+            <table class="conv">
+                <tbody>
+                    <tr>
+                        <td class="conv__display" colspan="4">
+                            <input id="bin" onchange="update('bin')" placeholder="Binary">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="conv__display" colspan="4">
+                            <input id="oct" onchange="update('oct')" placeholder="Oct.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="conv__display" colspan="4">
+                            <input id="dec" onchange="update('dec')" placeholder="Decimal">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="conv__display" colspan="4">
+                            <input id="hex" onchange="update('hex')" placeholder="Hex.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="conv__display" colspan="3">
+                            <input id="rgb" onchange="update('rgb')" placeholder="RGB Colour">
+                        </td>
+                        <td class="conv__sml"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
