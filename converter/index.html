@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="../main.css">
         <script src="script.js"></script>
     </head>
-    <body onkeypress="keyCode(event)">
+    <body>
         <div class="header">
             <h1 class="header__text">JS Conv.</h1>
         </div>
@@ -44,7 +44,7 @@
                         <td class="conv__display" colspan="3">
                             <input id="rgb" onchange="update('rgb')" placeholder="RGB Colour">
                         </td>
-                        <td class="conv__sml"></td>
+                        <td id="colourDisplay" class="conv__sml"></td>
                     </tr>
                 </tbody>
             </table>
