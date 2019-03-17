@@ -42,9 +42,11 @@
                     </tr>
                     <tr>
                         <td class="conv__display" colspan="3">
-                            <input id="rgb" onchange="update('rgb')" placeholder="RGB Colour">
+                            <input id="rgb" placeholder="RGB Colour" readonly>
                         </td>
-                        <td id="colourDisplay" class="conv__sml"></td>
+                        <td class="conv__sml">
+                            <input id="colourDisplay" onchange="update('rgb')" type="color">
+                        </td>
                     </tr>
                 </tbody>
             </table>

@@ -3,49 +3,55 @@ var b,o,d,h,r;
 function update(changed) {
     if (changed == "bin") {
         b = document.getElementById("bin").value;
+        d = parseInt(b, 2);
+
+        o = d.toString(8);
+        h = d.toString(16);
+        r = hexToRGB(h);
+
+        display(b,o,d,h,r);
     } else
     if (changed == "oct") {
         o = document.getElementById("oct").value;
+        d = parseInt(o, 8);
+
+        b = d.toString(2);
+        h = d.toString(16);
+        r = hexToRGB(h);
+        
+        display(b,o,d,h,r);
     } else
     if (changed == "dec") {
         d = document.getElementById("dec").value;
+        d = parseInt(d);
 
-        b = decimalTo(d,2);
-        o = decimalTo(d,8);
-        h = decimalTo(d,16);
+        b = d.toString(2);
+        o = d.toString(8);
+        h = d.toString(16);
         r = hexToRGB(h);
 
         display(b,o,d,h,r);
     } else
     if (changed == "hex") {
         h = document.getElementById("hex").value;
+        d = parseInt(h, 16);
+
+        b = d.toString(2);
+        o = d.toString(8);
+        r = hexToRGB(h);
+        
+        display(b,o,d,h,r);
     } else
     if (changed == "rgb") {
-        r = document.getElementById("rgb").value;
+        h = document.getElementById("colourDisplay").value.substr(1);
+        d = parseInt(h, 16);
+
+        b = d.toString(2);
+        o = d.toString(8);
+        r = hexToRGB(h);
+        
+        display(b,o,d,h,r);
     }
-}
-
-function decimalTo(decimal, x) {
-    var result = [];
-    while (decimal > 0) {
-        var quotient = Math.floor(decimal/x);
-        var modulus = decimal % x;
-
-        // If hexadecimal
-        if (x == 16 && modulus >= 10) {
-            if (modulus == 10) {modulus = "A"}
-            else if (modulus == 11) {modulus = "B"}
-            else if (modulus == 12) {modulus = "C"}
-            else if (modulus == 13) {modulus = "D"}
-            else if (modulus == 14) {modulus = "E"}
-            else if (modulus == 15) {modulus = "F"}
-        }
-
-        result.unshift(modulus);
-        decimal = quotient;
-    }
-    result = result.join("");
-    return result;
 }
 
 function hexToRGB(hex) {
@@ -58,6 +64,7 @@ function hexToRGB(hex) {
             result.push(temp);
         }
         result = result.join(",");
+        document.getElementById("colourDisplay").style.background = "rgb(" + result + ")"; 
         return(result);
     } else {
         return("N/A");
