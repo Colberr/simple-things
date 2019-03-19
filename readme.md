@@ -5,3 +5,4 @@ This repository is full of simple things (eg; a calculator) made purely with HTM
 ## Currently Included:
 Calculator  
 Weather (from OpenWeatherMap API)
+Converter
