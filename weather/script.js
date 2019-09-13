@@ -6,17 +6,22 @@ var baseURL = "https://api.openweathermap.org/data/2.5/weather?APPID=3bf87c77378
 changeLoc("london");
 
 function changeLoc(city) {
-    var url = baseURL + city;
-    var xmlhttp = new XMLHttpRequest();
+    if (city != "drug") {
+        var url = baseURL + city;
+        var xmlhttp = new XMLHttpRequest();
 
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var obj = JSON.parse(this.responseText);
-            disp(obj);
-        }
-    };
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var obj = JSON.parse(this.responseText);
+                disp(obj);
+            }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+    } else {
+        document.getElementById("input").innerHTML = "John's House, GB";
+        changeLoc("ware");
+    }
 }
 
 
