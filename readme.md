@@ -1,6 +1,6 @@
 # "Simple Things"
 
-This repository is full of simple things (eg; a calculator) made purely with HTML, CSS and JavaScript.
+Just some random things I made using only only HTML, CSS and JavaScript.
 
 ## Currently Included:
 [Calculator](./calculator/)  
